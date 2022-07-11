@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style3.css">
+    <script src="https://kit.fontawesome.com/d4982a21df.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+  </head>
+  <body>
+      <div class="container">
+          <h1></h1>
+      </div>
+      <center>
+    <form class="main">
+      
+           <h4 class="h2">BASIC INFORMATION</h4>
+           Category Name  <input class="inp"  type="text" placeholder="Name your brand"><br><br><br>
+           Parent Category <input  class="inp"  type="text" placeholder="Root level"><br><br><br>
+            Category Description <textarea class="inp" name="" id="" cols="30" rows="5"></textarea>
+       <div class="divi">0/3000</div>
+       <!-- <div class="div2">></div> -->
+       <div id="translate" onclick="clickHandler()">
+        <i style="margin-left: -3rem;"   class="fas fa-arrow-right"></i>
+        
+        
+    </div>
+       <!-- <input class="ne"> -->
+       <p class="pera"> Status <input class="div1" type="checkbox" >disable</p>  
+          </center> 
+        
+    </form>
+    <div id='myModal20' class="myModal20">
+
+        <div class="modal-content3">
+            <div>
+                <p style="font-size: 1.5rem;">
+                    SELECT  CATEGORY
+                    <p style="margin-left: 43rem; margin-top: -2rem; font-size: 1.3rem;">
+                        <i class="fas fa-times"></i>
+                    </p>   
+                </p>
+                <p style="font-size: 1.2rem;">
+                    name
+                </p>
+                <div style="margin-left: 40rem; margin-top: -2rem; font-size: 1.2rem;">
+                    Product
+                </div>
+                <div style="background-color: #B0E0E6; width: 45rem; height: 4rem;">
+                    <div style="margin-left: 4rem; margin-top: 2rem;">
+                        Baby $ childern
+                        <p style="margin-left: 38rem; margin-top: -1rem;">
+                            10
+                        </p>
+                    </div>
+                    
+                    
+                </div>
+                <div>
+                    Electronic
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+  <script>
+  var modal20 = document.getElementById("myModal20");
+    var myBtn2 = document.getElementById("translate");
+    var span = document.getElementsByClassName("close")[0];
+    myBtn2.onclick = function () {
+        modal20.style.display = "block";
+    }
+    span.onclick = function () {
+        modal20.style.display = "none";
+    }
+    window.onclick = function (event) {
+        if (event.target == modal20) {
+            modal20.style.display = "none";
+        }
+    }
+</script>
+</html>
